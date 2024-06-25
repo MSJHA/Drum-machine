@@ -1,0 +1,49 @@
+.container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    height: 100vh;
+    background: #282c34;
+    color: white;
+  }
+  
+  .display {
+    margin-bottom: 20px;
+    font-size: 1.5em;
+    padding: 10px;
+    border: 2px solid white;
+    border-radius: 5px;
+    width: 50%;
+    text-align: center;
+  }
+  
+  .pads {
+    display: grid;
+    grid-template-columns: repeat(3, 100px);
+    gap: 10px;
+  }
+  
+  .drum-pad {
+    width: 100px;
+    height: 100px;
+    background: #444;
+    border: 2px solid white;
+    border-radius: 5px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 1.5em;
+    cursor: pointer;
+    user-select: none;
+    transition: background 0.2s;
+  }
+  
+  .drum-pad:active {
+    background: #666;
+  }
+  
+  .clip {
+    display: none;
+  }
+  
